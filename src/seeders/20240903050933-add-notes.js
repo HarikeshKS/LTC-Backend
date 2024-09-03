@@ -12,15 +12,21 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('People', [
+    await queryInterface.bulkInsert('Notes', [
       {
-        title: 'Computer Vision - Chapter 1.1'
+        title: 'Computer Vision - Chapter 1.1',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
-        title: 'Python - Chapter 1.1'
+        title: 'Python - Chapter 1.1',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
-        title: 'Wireless Communication - Chapter 1.1'
+        title: 'Wireless Communication - Chapter 1.1',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ], {});
   },
