@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
-    content: DataTypes.STRING
+    content: DataTypes.TEXT('long')
   }, {
     sequelize,
     modelName: 'Note',
