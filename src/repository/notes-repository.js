@@ -1,7 +1,9 @@
 const CrudRepository = require("./crud-repository");
-
-class NotesRepository extends CrudRepository{
-    constructor(){
-        this.model = 
+const { Note } = require("../models/index");
+class NotesRepository extends CrudRepository {
+    constructor() {
+        super(Note);
     }
 }
+
+module.exports = NotesRepository;
